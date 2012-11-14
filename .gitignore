@@ -13,7 +13,7 @@
 
 # Hector adds
 core*
-.sql
+*.sql
 # End Hector adds
 
 # OS or Editor folders
