@@ -19,6 +19,15 @@
     <![endif]-->
     <script type="text/javascript" language="javascript" src="assets/js/dataTables/media/js/jquery.js"></script>
 	<script type="text/javascript" language="javascript" src="assets/js/dataTables/media/js/jquery.dataTables.js"></script>
+	<script>
+		$(document).ready(function() {
+		$('#proxyTable').dataTable( {
+			"bProcessing": true,
+			"bServerSide": true,
+			"sAjaxSource": "core/lib/json_free_table.php"
+			} );
+		} );
+	</script>
     
     <!-- Le fav and touch icons -->
     <link rel="shortcut icon" href="assets/ico/favicon.ico">
@@ -125,16 +134,7 @@
     
     	
       <div class="span4">
-      	<script>
-			$(document).ready(function() {
-			$('#proxyTable').dataTable( {
-				"bProcessing": true,
-				"bServerSide": true,
-				"sAjaxSource": "core/lib/json_free_table.php"
-				} );
-			} );
-		</script>
-        <table id="proxyTable">
+        <table class="display dataTable" id="proxyTable">
             <thead>
                 <tr>
                     <th>Column 1</th>
