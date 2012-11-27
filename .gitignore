@@ -10,7 +10,12 @@
 *.vi
 *~
 *.sass-cache
+
+# Hector adds
 core*
+*.sql
+# End Hector adds
+
 # OS or Editor folders
 .DS_Store
 ._*
