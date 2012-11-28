@@ -17,21 +17,7 @@
     <!--[if lt IE 9]>
       <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
-    
-    <!-- JQuery implementation -->
-    <script src="http://code.jquery.com/jquery-latest.js" type="text/javascript"></script>
-    <script type="text/javascript" language="javascript" src="assets/js/dataTables/media/js/jquery.js"></script>
-	<script type="text/javascript" language="javascript" src="assets/js/dataTables/media/js/jquery.dataTables.js"></script>
-	<script>
-		$(document).ready(function() {
-		$('#proxyTable').dataTable( {
-			"bProcessing": true,
-			"bServerSide": true,
-			"sAjaxSource": "core/lib/json_free_table.php"
-			} );
-		} );
-	</script>
-    
+   
     <!-- Le fav and touch icons -->
     <link rel="shortcut icon" href="assets/ico/favicon.ico">
     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png">
@@ -252,6 +238,17 @@
     <script src="assets/js/bootstrap-typeahead.js"></script>
     <script src="assets/js/bootstrap-affix.js"></script>
     <script src="assets/js/application.js"></script>
+    <!-- Data Tables -->
+    <script type="text/javascript" language="javascript" src="assets/js/dataTables/media/js/jquery.dataTables.js"></script>
+    <script>
+		$(document).ready(function() {
+		$('#proxyTable').dataTable( {
+			"bProcessing": true,
+			"bServerSide": true,
+			"sAjaxSource": "core/lib/json_free_table.php"
+			} );
+		} );
+	</script>
 
 
 
