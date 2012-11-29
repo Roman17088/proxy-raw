@@ -244,6 +244,7 @@
     <!-- Data Tables -->
     <script type="text/javascript" language="javascript" src="assets/js/dataTables/media/js/jquery.dataTables.js"></script>
     <script>
+	function table(){	
 		$(document).ready(function() {
 		var pTable = $('#proxyTable').dataTable( {
 			"bProcessing": true,
@@ -251,9 +252,10 @@
 			"sAjaxSource": "core/public/json_free_table.php"
 			} );
 		pTable.fnSort([[5,'desc']]);
-		setTimeout(pTable.fnUpdate,3000);
 		} );
-		
+	}
+	
+	setTimeout(table(),3000);
 		
 	</script>
 
