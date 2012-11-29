@@ -245,11 +245,12 @@
     <script type="text/javascript" language="javascript" src="assets/js/dataTables/media/js/jquery.dataTables.js"></script>
     <script>
 		$(document).ready(function() {
-		$('#proxyTable').dataTable( {
+		var pTable = $('#proxyTable').dataTable( {
 			"bProcessing": true,
 			"bServerSide": true,
 			"sAjaxSource": "core/public/json_free_table.php"
 			} );
+		pTable.fnSort([5,'desc']);
 		} );
 	</script>
 
