@@ -12,7 +12,7 @@
 *.sass-cache
 
 # Hector adds
-core*
+#core*
 *.sql
 # End Hector adds
 

@@ -244,6 +244,7 @@
     <!-- Data Tables -->
     <script type="text/javascript" language="javascript" src="assets/js/dataTables/media/js/jquery.dataTables.js"></script>
     <script>
+	
 	function table(){	
 		$(document).ready(function() {
 		var pTable = $('#proxyTable').dataTable( {
@@ -255,7 +256,23 @@
 		} );
 	}
 	
-	setTimeout(table(),3000);
+	function updateTable(){
+		$(document).ready(function() {
+		  var oTable = $('#proxyTable').dataTable();
+		  oTable.fnDraw(); // Redraw the table
+		} );
+	}
+	
+	table();
+	$(document).ready(function()
+		{
+			var refreshId = setInterval( function() 
+			{
+				var r = (-0.5)+(Math.random()*(1000.99));
+				var oTable = $('#proxyTable').dataTable();
+				oTable.fnDraw(); // Redraw the table
+			}, 15000);
+		});
 		
 	</script>
 
