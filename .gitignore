@@ -12,7 +12,7 @@
 *.sass-cache
 
 # Hector adds
-#core*
+core/config.inc.php
 *.sql
 # End Hector adds
 
