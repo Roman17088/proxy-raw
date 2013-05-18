@@ -20,7 +20,7 @@ $reliable_full_list 	  = $full_list_path."/_reliable_list.txt";
 // No Planet Lab relative file path
 $planetlab_full_list 	  = "full_list_nopl/_full_list.txt";
 // ------------------------------------------------------------------
-include_once("/home/hvalverde/proxy-raw/core/config.inc.php");
+include_once("/var/www/vhosts/hectorvalverde.com/proxy-raw.com/core/config.inc.php");
 include_once(_ABS_CORE_PATH."/lib/functions.proxy-checker.php");
 // Notifications
 $email 					  = _ADMIN_MAIL;
