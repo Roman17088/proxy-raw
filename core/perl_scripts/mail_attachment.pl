@@ -16,7 +16,7 @@
 # Hector:
 # Modificaré el @INC para añadir la librería MIME::Parser
 # que la tengo instalada en: /home/hvalverde/perl5/lib/
-use lib "/home/hvalverde/perl5/lib/perl5";
+use lib "/var/www/vhosts/hectorvalverde.com/perl5/lib/perl5";
 
 ($me = $0) =~ s|.*/(.*)|$1|;
 
@@ -25,7 +25,7 @@ Getopts('exX');
 
 $opt_x++ if $opt_X;        # -X implies -x
 
-$TMPDIR = "/home/hvalverde/mail/attachment";
+$TMPDIR = "/var/www/vhosts/hectorvalverde.com/mail/attachment";
 
 use MIME::Parser;
 
